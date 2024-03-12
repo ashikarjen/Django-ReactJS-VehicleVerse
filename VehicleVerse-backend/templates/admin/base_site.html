@@ -1,0 +1,23 @@
+{% extends "admin/base_site.html" %}
+{% block title %}
+VehicleVerse - Admin Panel
+{% endblock %}
+{% block extrahead %}
+<style>
+    :root {
+        --theme-color: #ffcc00;
+        --primary: #485e48;
+        --link-fg: #054a72;
+        --accent: #fffbe4;
+    }
+    #header {
+        background-color: #000000;
+        color: #ffffff;
+    }
+</style>
+{% endblock %}
+{% block branding %}
+    <h1 id="site-name">
+        <a href="{% url 'admin:index' %}">VehicleVerse - Admin Panel</a>
+    </h1>
+{% endblock %}
